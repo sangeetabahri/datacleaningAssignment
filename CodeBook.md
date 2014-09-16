@@ -19,6 +19,8 @@ The data for this assignment is from <a href="https://d396qusza40orc.cloudfront.
 
 ![ScreenShot](https://raw.githubusercontent.com/sangeetabahri/datacleaningAssignment/master/DatasetExplaination.png)
 
+## Steps
+
 The tidy data was created by following steps
 1 Merge X data ( X_train and X_test)  , as seen from above both have same number of columns
 2 Assign columns names to the combined X data from the features.txt. The number of columns in X data are the same as number of observations in features.txt
