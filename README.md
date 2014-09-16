@@ -22,6 +22,9 @@ Please ensure the following is true before running the script
 
 <b>To run the script source("run_analysis.R")</b>
 
+### Image Explaining the Data
+![ScreenShot](https://raw.githubusercontent.com/sangeetabahri/datacleaningAssignment/master/DatasetExplaination.png)
+
 ### Functionality
 <b> Script run_analysis.R does the following  </b>
 <ol>
@@ -34,7 +37,6 @@ Please ensure the following is true before running the script
 <li>      Merges the subject data , X data, and Y (activity description) data to create one data set</li>
 <li>      From the data set in step (7) above , creates a second, independent tidy data set with the average of each feature variable for each activity and each subject.</li>
 </ol>
-
 ### Output 
 The script run_analysis.R creates a tidy_data.txt in your working directory. The output file has total data of 180 rows, and 81 columns (subjectId,activity, and 79 variables from the data set meeting the cleanup rules).
 
