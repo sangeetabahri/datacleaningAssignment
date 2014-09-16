@@ -22,16 +22,29 @@ The data for this assignment is from <a href="https://d396qusza40orc.cloudfront.
 ## Steps
 
 The tidy data was created by following steps
-1 Merge X data ( X_train and X_test)  , as seen from above both have same number of columns
-2 Assign columns names to the combined X data from the features.txt. The number of columns in X data are the same as number of observations in features.txt
-3 creating a subset of X data, for those column names that have either "mean()" or "std()"", rest are dropped
-4 Merge Y data ( Y_train and Y_test) , as seen from above both have same number of columns
-5 Data in Y are activity ids, so we change Y to have activity description instead of activitvy id
-6 Merge subject data ( subject_train and subject_test) , as seen from above both have same number of columns
-7 Combine data from step 6, 5 and 3 ( subject,activity,X datasets) into a single data frame.
-8 The script calculates mean values for all features variables, group by subject and activity_name
-9 The data is cleaned up by run_analysis.R script
-10 The output file tidy_data.txt is generated, there are 180 observations and 81 columns
+<ol>
+<li>
+Merge X data ( X_train and X_test)  , as seen from above both have same number of columns
+<li></li>
+Assign columns names to the combined X data from the features.txt. The number of columns in X data are the same as number of observations in features.txt
+<li></li>
+Creating a subset of X data, for those column names that have either "mean()" or "std()"", rest are dropped
+<li></li>
+Merge Y data ( Y_train and Y_test) , as seen from above both have same number of columns
+<li></li>
+Data in Y are activity ids, so we change Y to have activity description instead of activitvy id
+<li></li>
+Merge subject data ( subject_train and subject_test) , as seen from above both have same number of columns
+<li></li>
+Combine data from step 6, 5 and 3 ( subject,activity,X datasets) into a single data frame.
+<li></li>
+The script calculates mean values for all features variables, group by subject and activity_name
+</li>
+</ol>
+
+*  <b>The data is cleaned up by run_analysis.R script</b>
+
+*<b></i>  The output file tidy_data.txt is generated, there are 180 observations and 81 columns</i></b>
 
 ## Tidy Data Variables
 
