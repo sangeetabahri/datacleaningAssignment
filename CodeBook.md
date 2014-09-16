@@ -1,6 +1,39 @@
 ## Cookbook - Cleaning Data Course Project Assignment
 This codebook descrbes the varibales of the tidy_data.txt.The tidy dataset has  180 observations and 81 variables.
 
+### Design choices
+#### Data files connection/link with one another
+- Data file  X_train.txt, Y_train.txt and subject_train.txt have 7352 observations.
+- Data file  X_test.txt, Y_test.txt and subject_test.txt  have 2947 observations.
+- Data file  features.txt has 561 observations, and Data file  X_train.txt and X_test.txt have 561 columns. The features are columns variables for X data.
+- Data file  activies.txt has 6 observations, and 2 columns ( id, and activity description)
+- Data file  Y_test.txt  has one column, which refers to the id in activity.txt.
+
+#### Reasoning for the data cleaning process
+The tidy data was created by following steps
+<ol>
+<li>
+Merge  X_train and X_test as X data using rbind,as seen from above both have same number of columns
+<li></li>
+Assign columns names to the combine X data from the features.txt. The number of columns in X data is same as number of observations in features.txt.
+<li></li>
+Creating a subset of X data, for those feature variable, where column names has either "mean()" or "std()"", rest of the feature variables are dropped
+<li></li>
+Merge Y_train and Y_test as Y data using rbind,as seen from above both have same number of columns
+<li></li>
+Data in Y is activity ids, so we change Y to have activity description instead of activitvy id
+<li></li>
+Merge subject data ( subject_train and subject_test) , as seen from above both have same number of columns
+<li></li>
+Combine data from step 6, 5 and 3 into a single data frame.
+<li></li>
+The script calculates mean values for all features, group by subject and activity_name
+<li></li>
+The data is cleaned up by run_analysis.R script
+<li></li>
+The output file tidy_data.txt has 180 observations and 81 variables
+</li></ol>
+
 ### Tidy Data Variables
 
 The following are 81 variables in the tidy dataset 
