@@ -33,19 +33,20 @@ The script calculates mean values for all features, group by subject and activit
 The data is cleaned up by run_analysis.R script
 </li><li>
 The output file tidy_data.txt has 180 observations and 81 variables
-</li></ol>
+</li>
+</ol>
 
 ### Tidy Data Variables
 
 The following are 81 variables in the tidy dataset 
+To see a full list and description of the measurement vectors see 'features_info.txt' and "README.txt" in the data package.
 
 #### ID Variables
 <ol>
 <li>subjectid : The participant Id ( 1-30) </li>
 <li>activitY  : The description of the activity performed when the measurement was taken. There are 6 different observed activities</li>
 </ol>
-
-##### To see a full list and description of the measurement vectors see 'features_info.txt' in the data package.
+#### Features Variables 
 <ol>
 <li> tBodyAcc-mean()-X  Column  1 </li>
 <li> tBodyAcc-mean()-Y  Column  2 </li>
