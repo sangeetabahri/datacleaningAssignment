@@ -10,27 +10,28 @@ This codebook descrbes the varibales of the tidy_data.txt.The tidy dataset has  
 - Data file  Y_test.txt  has one column, which refers to the id in activity.txt.
 
 #### Reasoning for the data cleaning process
+
 The tidy data was created by following steps
 <ol>
 <li>
 Merge  X_train and X_test as X data using rbind,as seen from above both have same number of columns
-<li></li>
+</li><li>
 Assign columns names to the combine X data from the features.txt. The number of columns in X data is same as number of observations in features.txt.
-<li></li>
+</li><li>
 Creating a subset of X data, for those feature variable, where column names has either "mean()" or "std()"", rest of the feature variables are dropped
-<li></li>
+</li><li>
 Merge Y_train and Y_test as Y data using rbind,as seen from above both have same number of columns
-<li></li>
+</li><li>
 Data in Y is activity ids, so we change Y to have activity description instead of activitvy id
-<li></li>
+</li><li>
 Merge subject data ( subject_train and subject_test) , as seen from above both have same number of columns
-<li></li>
+</li><li>
 Combine data from step 6, 5 and 3 into a single data frame.
-<li></li>
+</li><li>
 The script calculates mean values for all features, group by subject and activity_name
-<li></li>
+</li><li>
 The data is cleaned up by run_analysis.R script
-<li></li>
+</li><li>
 The output file tidy_data.txt has 180 observations and 81 variables
 </li></ol>
 
