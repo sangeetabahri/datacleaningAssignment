@@ -1,13 +1,13 @@
 ## README for Cleaning Data Course Project Assignment
 
 ### Purpose  
-The goal of the project is to collec, work and create tidy data for UCI HAR Dataset.
+The goal of the project is to collect, work and create tidy data for UCI HAR Dataset.
 
 ### Source Data 
 The data for this assignment is from  <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">Human Activity Recognition Using Smartphones </a>
 
 ### Files for the Assignment
-   * run_analysis.R - This is a R script that processes the data set, and generates the required tidy dataset.
+   * run_analysis.R - This is an R script that processes the data set, and generates the required tidy dataset.
    * Codebook.md    - This markdown file describes the variables, the data, and process for creating the tidy dataset.
    * README.md      - This markdown file is the README file for the project.
    * tidy_data.txt  - This is txt file that contains the tidy dataset.
@@ -21,9 +21,6 @@ Please ensure the following is true before running the script
 
 
 <b>To run the script source("run_analysis.R")</b>
-
-### Image Explaining the Data
-![ScreenShot](https://raw.githubusercontent.com/sangeetabahri/datacleaningAssignment/master/DatasetExplaination.png)
 
 ### Functionality
 <b> Script run_analysis.R does the following  </b>

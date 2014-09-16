@@ -3,8 +3,8 @@
 ### Data
 The data for this assignment is from <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">Human Activity Recognition Using Smartphones </a>
 
-### Data files and how the data set is connected
-#### Data file content 
+### Data files
+
 - Data file  X_train.txt has 7352 observations, and 561 columns
 - Data file  X_test.txt  has 2947 observations, and 561 columns
 - Data file  Y_train.txt has 7352 observations, and one column
@@ -13,10 +13,12 @@ The data for this assignment is from <a href="https://d396qusza40orc.cloudfront.
 - Data file  subject_test.txt has 2947 observations, and one column
 - Data file  features.txt has 561 observations, and one column
 - Data file  activies.txt has 6 observations, and 2 columns ( id, and activity description)
-#### Dataset Connection
-![ScreenShot](https://raw.githubusercontent.com/sangeetabahri/datacleaningAssignment/master/DatasetExplaination.png)
+
 
 ### Cleaning Process
+
+![ScreenShot](https://raw.githubusercontent.com/sangeetabahri/datacleaningAssignment/master/DatasetExplaination.png)
+
 The tidy data was created by following steps
 1 Merge X data ( X_train and X_test)  , as seen from above both have same number of columns
 2 Assign columns names to the combined X data from the features.txt. The number of columns in X data are the same as number of observations in features.txt
