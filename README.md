@@ -23,17 +23,46 @@ Please ensure the following is true before running the script
 <b>To run the script source("run_analysis.R")</b>
 
 ### Functionality
-<b> Script run_analysis.R does the following  </b>
+#### Data files
+- Data file  X_train.txt has 7352 observations, and 561 columns
+- Data file  X_test.txt  has 2947 observations, and 561 columns
+- Data file  Y_train.txt has 7352 observations, and one column
+- Data file  Y_test.txt  has 2947 observations, and one column
+- Data file  subject_train.txt has 7352 observations, and one column
+- Data file  subject_test.txt has 2947 observations, and one column
+- Data file  features.txt has 561 observations, and one column
+- Data file  activies.txt has 6 observations, and 2 columns ( id, and activity description)
+
+
+#### Dataset and variable names connections to each other
+The image below is provided by David TA for this course
+![ScreenShot](https://raw.githubusercontent.com/sangeetabahri/datacleaningAssignment/master/DatasetExplaination.png)
+
+#### Steps
+
+The tidy data was created by following steps
 <ol>
-<li>      Merges the X data for training ( X_train.txt  ) and the test  (X_test.txt) to create one data set for X.</li>
-<li>      Appropriately labels the data set with descriptive variable names from features.txt </li>
-<li>      Extracts only the measurements on the mean and standard deviation for each measurement for X. </li>
-<li>      Merges the Y data for training ( Y_train.txt  ) and the test  (Y_test.txt) to create one data set for Y.</li>
-<li>      Uses descriptive activity names to name the activities in the data set ( Y_train.txt and Y_test.txt) </li>
-<li>      Merges the subject data for training ( subject_train.txt  ) and the test  (subject_test.txt) to create one data set for subject.</li>
-<li>      Merges the subject data , X data, and Y (activity description) data to create one data set</li>
-<li>      From the data set in step (7) above , creates a second, independent tidy data set with the average of each feature variable for each activity and each subject.</li>
+<li>
+Merge X data ( X_train and X_test)  , as seen from above both have same number of columns
+</li><li>
+Assign columns names to the combined X data from the features.txt. The number of columns in X data are the same as number of observations in features.txt
+</li><li>
+Creating a subset of X data, for those column names that have either "mean()" or "std()"", rest are dropped
+</li><li>
+Merge Y data ( Y_train and Y_test) , as seen from above both have same number of columns
+</li><li>
+Data in Y are activity ids, so we change Y to have activity description instead of activitvy id
+</li><li>
+Merge subject data ( subject_train and subject_test) , as seen from above both have same number of columns
+</li><li>
+Combine data from step 6, 5 and 3 ( subject,activity,X datasets) into a single data frame.
+</li><li>
+The script calculates mean values for all features variables, group by subject and activity_name
+</li><li>
+The output file tidy_data.txt is generated, there are 180 observations and 81 columns
+</li>
 </ol>
+
 ### Output 
 The script run_analysis.R creates a tidy_data.txt in your working directory. The output file has total data of 180 rows, and 81 columns (subjectId,activity, and 79 variables from the data set meeting the cleanup rules).
 
