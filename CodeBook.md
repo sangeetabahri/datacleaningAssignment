@@ -37,10 +37,10 @@ The output file tidy_data.txt has 180 observations and 81 variables
 </ol>
 
 ### Tidy Data Variables
-
-The following are 81 variables in the tidy dataset 
+<p>
+The following are 81 variables in the tidy dataset.
 To see a full list and description of the measurement vectors see 'features_info.txt' and "README.txt" in the data package.
-
+</p>
 #### ID Variables
 <ol>
 <li>subjectid : The participant Id ( 1-30) </li>
