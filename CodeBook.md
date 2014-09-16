@@ -15,36 +15,37 @@ The data for this assignment is from <a href="https://d396qusza40orc.cloudfront.
 - Data file  activies.txt has 6 observations, and 2 columns ( id, and activity description)
 
 
-### Cleaning Process
+## Cleaning Process
+
+### Dataset and variable names connections to each other
 
 ![ScreenShot](https://raw.githubusercontent.com/sangeetabahri/datacleaningAssignment/master/DatasetExplaination.png)
 
-## Steps
+### Steps - The data is cleaned up by run_analysis.R script
 
 The tidy data was created by following steps
 <ol>
 <li>
 Merge X data ( X_train and X_test)  , as seen from above both have same number of columns
-<li></li>
+</li><li>
 Assign columns names to the combined X data from the features.txt. The number of columns in X data are the same as number of observations in features.txt
-<li></li>
+</li><li>
 Creating a subset of X data, for those column names that have either "mean()" or "std()"", rest are dropped
-<li></li>
+</li><li>
 Merge Y data ( Y_train and Y_test) , as seen from above both have same number of columns
-<li></li>
+</li><li>
 Data in Y are activity ids, so we change Y to have activity description instead of activitvy id
-<li></li>
+</li><li>
 Merge subject data ( subject_train and subject_test) , as seen from above both have same number of columns
-<li></li>
+</li><li>
 Combine data from step 6, 5 and 3 ( subject,activity,X datasets) into a single data frame.
-<li></li>
+</li><li>
 The script calculates mean values for all features variables, group by subject and activity_name
+</li><li>
+The output file tidy_data.txt is generated, there are 180 observations and 81 columns
 </li>
 </ol>
 
-*  <b>The data is cleaned up by run_analysis.R script</b>
-
-*<b></i>  The output file tidy_data.txt is generated, there are 180 observations and 81 columns</i></b>
 
 ## Tidy Data Variables
 
